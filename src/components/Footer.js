@@ -21,7 +21,7 @@ const Footer = () => {
             <Container maxWidth="md">
                 <Toolbar>
                     <Typography variant="body1" color="inherit">
-                        Designed and developed by Shakeel Ahmed. Copyright © Shakeel {new Date().getFullYear()}</Typography>
+                        Designed and developed by <a href='https://www.linkedin.com/in/shakeel26/'>Shakeel Ahmed</a>. Copyright © Shakeel {new Date().getFullYear()}</Typography>
                 </Toolbar>
             </Container>
         </AppBar>
