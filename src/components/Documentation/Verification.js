@@ -20,7 +20,12 @@ const useStyles = makeStyles({
     },
     list: {
         marginLeft: '7%'
-    }
+    },
+    modalHead: {
+        textAlign: 'center'
+    },
+    closeModal: {
+       }
 });
 
 
@@ -37,11 +42,12 @@ const Verification = () => {
     const makeBoxFunction = spouse => {
         setmodelBox(
             <Box className={classes.root}>
-                <h2 id="parent-modal-title">List of Docs</h2>
+                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Begum k kagaz</Typography>
+                <Divider />
                 <Typography id="parent-modal-description">
                     {spouse === 'spouse' ? Object.entries(verification.docs.spouse).map(([key, value]) => <li className={classes.list}> {value}</li>) : Object.entries(verification.docs.spouseWhoStudy).map(([key, value]) => <li className={classes.list}> {value}</li>)}
                 </Typography>
-                <Button variant="contained" onClick={handleClose}>Close</Button>
+                <Button justify="space-between" className={classes.closeModal} variant="contained" onClick={handleClose}>Close</Button>
             </Box>
         )
     }
@@ -55,6 +61,7 @@ const Verification = () => {
 
             <h4>Fee: {verification.fee} </h4>
             <AppointmentFormLink />
+            <Divider />
 
             <Typography>{verification.desc} </Typography>
 

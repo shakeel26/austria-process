@@ -61,6 +61,7 @@ const About = () => {
 
         <Grid item xs={12} md={8} lg={8}>
           <img
+            align= 'right'
             className={classes.cover}
             src="/austria-process/austria-cover.png"
             alt="Austria Mao"

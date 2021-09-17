@@ -19,7 +19,7 @@ export const verification = {
             '8': "Police Clearance Certificate (get it just 10-15 days before embassy's appointment)",
             '9': 'FRC (Family Registration Certificate) from Nadra',
             '10': "English Proficiency Certificate from University (Incase you don't have IELTS)",
-            '11': 'Special Entrance Qualification Certificate from your previous University'
+            '11': 'Special Entrance Qualification Certificate from University in Pakistan'
         },
         'spouse': {
             '1': 'Passport',
@@ -53,14 +53,25 @@ export const verification = {
 
 
 export const legalization = {
-    'fee': '80 Euro',
+    'fee': '80 Euro/document',
     'desc': 'Legalization is the confirmation of a true copy of an original document presented to and done by the consular section. An authentication is only possible if the original document has been issued by an Austrian authority. Foreign documents can, therefore, not be authenticated.',
-    'easy': "If you didn't understand the statement above , its simply the attestation of your documents from Austrian embassy",
+    'easy': "If you didn't understand the statement above , its simply the attestation of your documents from embassy.",
     'docs' : {
-        '1': 'Matric',
-        '2': 'FSC ' ,
-        '3': 'bs'
-    }
+        'student' : {
+            '1': 'University Degree /Intermediate Certificate for Bachelor candidates',
+            '2': 'Birth Certificate',
+            '3': "Police Clearance Certificate (a fresh one not the one you had at Step 1)",
+            '4': 'Special Entrance Qualification Certificate'
+        },
+        'spouse': {
+            '3': 'Birth Certificate',
+            '4': "Police Clearance Certificate (a fresh one not the one you had at Step 1)",
+            '6': 'Marriage Registration Certificate',
+        },
+        'spouseWhoStudy': {
+            'desc': 'Above all documents.'
+        }
+    },
 }
 
 export const residence = {
