@@ -62,7 +62,7 @@ const About = () => {
         <Grid item xs={12} md={8} lg={8}>
           <img
             className={classes.cover}
-            src="./Austria.png"
+            src="/austria-process/austria-cover.png"
             alt="Austria Mao"
           />
         </Grid>
