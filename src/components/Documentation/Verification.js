@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -60,11 +61,11 @@ const Verification = () => {
             <h5>Note</h5>
             <Typography>{verification.note}</Typography>
 
-            <h7> Choose your scene from list below: </h7>
             <ul>
                 <Typography><strong>1. For Students</strong> </Typography>
                 {Object.entries(verification.docs.student).map(([key, value]) => <li className={classes.list}> {value}</li>)}
             </ul>
+            <Divider />
 
             <ul>
                 <Typography>  <strong>2. For Spouse Visa</strong> <Button variant="contained" onClick={() => handleOpen('spouse')}>View List <Pageview /></Button></Typography>
@@ -86,10 +87,13 @@ const Verification = () => {
                     aria-labelledby="parent-modal-title"
                     aria-describedby="parent-modal-description"
                 >
+
                     {modelBox}
                 </Modal>
+
             </ul>
 
+            <Divider />
             <h4>Positive Result</h4>
             <Typography>{verification.resultPositive}</Typography>
 
