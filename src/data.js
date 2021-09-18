@@ -5,7 +5,7 @@ export const about = [{
 
 export const beforeStart = [{
     'title': 'Before Start !',
-    'desc': 'Please get your all documents attested before starting the embassy process. '
+    'desc': 'Please get your all documents attested from Ministry of foreign affairs(MOFA) before starting the embassy process. '
 }]
 export const verification = {
     'fee': '22800 PKR',
@@ -126,7 +126,7 @@ export const residence = {
 export const visaD = {
     'fee': '100 Euro',
     'desc': 'A Visa D entitles you to enter and stay in Austria. It can be granted for a duration of 91 days up to 6 months. Holders of a Visa D also enjoy freedom of movement to other Schengen countries for up to 90 days provided that they fulfil the general entry conditions.',
-    'easy': "If you didn't understand the statement above , its simply the visa on you paspsort and you are suppose to collect your residence card once you are in Austria.",
+    'easy': "If you didn't understand the statement above , its simply the visa on your paspsort and you are suppose to collect your residence card once you are in Austria.",
     'docs' : {
         '1': 'Passport',
         '2': 'CNIC ' ,
