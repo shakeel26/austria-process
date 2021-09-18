@@ -28,16 +28,16 @@ const Legalization = () => {
 
             <ul>
             <Typography><strong>1. For Students</strong> </Typography>
-                {Object.entries(legalization.docs.student).map(([key, value]) => <li className={classes.list}> {value}</li>)}
+                {Object.entries(legalization.docs.student).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
             </ul>
             <ul>
             <Typography><strong>2. For Spouse</strong> </Typography>
-                {Object.entries(legalization.docs.spouse).map(([key, value]) => <li className={classes.list}> {value}</li>)}
+                {Object.entries(legalization.docs.spouse).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
             </ul>
 
             <ul>
             <Typography><strong>3. Spouse Who will study or need recognition of docs</strong> </Typography>
-                {Object.entries(legalization.docs.spouseWhoStudy).map(([key, value]) => <Typography> {value}</Typography>)}
+                {Object.entries(legalization.docs.spouseWhoStudy).map(([key, value]) => <Typography key={key}> {value}</Typography>)}
             </ul>
         </>
     );

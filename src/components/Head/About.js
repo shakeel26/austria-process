@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
+import ButtonMailto from './ButtonMailto';
 
 const useStyles = makeStyles(theme => ({
   // root: {
@@ -36,8 +36,8 @@ const About = () => {
   return (
     <section id="about">
       <Grid container spacing={10} className={classes.root}>
-        {about.map((about) =>
-          <Grid item xs={12} md={4} lg={4}>
+        {about.map((about, index) =>
+          <Grid item xs={12} md={4} lg={4} key={index}>
             <CardContent className={classes.content}>
               <Typography component="h5" variant="h5">
                 {about.title}
@@ -49,11 +49,11 @@ const About = () => {
             </CardContent>
 
             <div className={classes.buttons}>
-              <Link href="#contact" color="inherit">
-                <Button variant="contained">
-                  Contact
+              {/* <Link href="#contact" color="inherit"> */}
+                <Button variant="contained"> 
+                <ButtonMailto label="Contact" mailto="mailto:xhakil26@gmail.com" />
                 </Button>
-              </Link>
+              {/* </Link> */}
             </div>
 
           </Grid>

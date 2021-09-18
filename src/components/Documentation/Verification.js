@@ -11,7 +11,7 @@ import Pageview from '@material-ui/icons/Pageview';
 
 
 const useStyles = makeStyles({
-    root: {
+    modalBox: {
         position: "absolute",
         top: "50%",
         left: "50%",
@@ -41,11 +41,11 @@ const Verification = () => {
 
     const makeBoxFunction = spouse => {
         setmodelBox(
-            <Box className={classes.root}>
+            <Box className={classes.modalBox}>
                 <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Begum k kagaz</Typography>
                 <Divider />
                 <Typography id="parent-modal-description">
-                    {spouse === 'spouse' ? Object.entries(verification.docs.spouse).map(([key, value]) => <li className={classes.list}> {value}</li>) : Object.entries(verification.docs.spouseWhoStudy).map(([key, value]) => <li className={classes.list}> {value}</li>)}
+                    {spouse === 'spouse' ? Object.entries(verification.docs.spouse).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>) : Object.entries(verification.docs.spouseWhoStudy).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
                 </Typography>
                 <Button justify="space-between" className={classes.closeModal} variant="contained" onClick={handleClose}>Close</Button>
             </Box>
@@ -70,7 +70,7 @@ const Verification = () => {
 
             <ul>
                 <Typography><strong>1. For Students</strong> </Typography>
-                {Object.entries(verification.docs.student).map(([key, value]) => <li className={classes.list}> {value}</li>)}
+                {Object.entries(verification.docs.student).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
             </ul>
             <Divider />
 

@@ -1,20 +1,20 @@
 import React from "react";
-import Divider from '@material-ui/core/Divider';
 import Grid from "@material-ui/core/Grid";
-import Admission from "./Admission";
+import Divider from '@material-ui/core/Divider';
 import ResidencePermit from "./ResidencePermit";
-import Accommodation from "./Accommodation";
+import VisaD from "../Arrival/VisaD";
+import BookFlight from '../Arrival/BookFlight';
 
 const AdmissionResidence = () => {
     return (
-        <Grid container xs={12} spacing={10}>
+        <Grid container spacing={10}>
             <Grid item xs={12} sm={12} md={6} lg={6}>
-                <Admission />
-                <Divider />
-                <Accommodation />
+            <ResidencePermit />
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
-                <ResidencePermit />
+                <VisaD />
+                <Divider />
+                <BookFlight />
             </Grid>
         </Grid>
     );

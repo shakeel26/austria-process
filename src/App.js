@@ -4,8 +4,8 @@ import About from './components/Head/About';
 import Navbar from './components/Head/Navbar';
 import Documentation from './components/Documentation/Documentation.js';
 import AdmissionResidence from './components/AdmissionResidence/AdmissionResidence';
-import Arrival from './components/Arrival/Arrival';
 import Footer from './components/Footer';
+import BeforeStart from './components/BeforeStart';
 
 
 
@@ -15,11 +15,11 @@ function App() {
 <Navbar />
 <About />
 <Divider />
+<BeforeStart/>
+<Divider/>
 <Documentation />
 <Divider />
 <AdmissionResidence />
-<Divider />
-<Arrival />
 <Divider />
 <Footer />
 

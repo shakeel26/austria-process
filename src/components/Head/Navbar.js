@@ -25,13 +25,6 @@ const Navbar = () => {
       <MenuItem>
           <Link color="inherit" href="">Home</Link>
         </MenuItem>
-
-        <MenuItem>
-          <Link color="inherit" href="#study" >Study Visa</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link color="inherit" href="#spouse" >Shadi Visa</Link>
-        </MenuItem>
         <MenuItem>
           <Link color="inherit" href="#job" >Job Scene</Link>
         </MenuItem>

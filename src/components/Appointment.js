@@ -5,7 +5,7 @@ import { form } from "../data";
 const AppointmentFormLink = () => {
     return (
         <>
-             Download the AppointmentForm form {form.map((link) => <a href={link.link}>AppointmentFormLink</a>)}
+             Download the AppointmentForm form {form.map((link, index) => <a key={index} href={link.link}>AppointmentFormLink</a>)}
         </>
     );
 }
