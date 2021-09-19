@@ -63,6 +63,9 @@ const ResidencePermit = () => {
         <>
             <h3> Step 5 - Residence Permit </h3>
             <h4>Fee: {residence.fee} </h4>
+
+            <h6>Timeline: 2 - 4 months - Wait for embassy email.</h6>
+
             <AppointmentFormLink />
             <Divider />
             <Typography>{residence.desc} </Typography>

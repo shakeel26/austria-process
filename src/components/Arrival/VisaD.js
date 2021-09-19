@@ -20,6 +20,9 @@ const VisaD = () => {
         <>
             <h3> Step 6 - National Visa D </h3>
             <h4>Fee: {visaD.fee} </h4>
+
+            <h6>Timeline: 1 - 2 weeks - Wait for embassy email.</h6>
+
             <AppointmentFormLink />
             <Divider />
 

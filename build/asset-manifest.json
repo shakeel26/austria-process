@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/austria-process/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/austria-process/static/js/main.7a1a40e7.chunk.js",
-    "main.js.map": "/austria-process/static/js/main.7a1a40e7.chunk.js.map",
+    "main.js": "/austria-process/static/js/main.fd5f2995.chunk.js",
+    "main.js.map": "/austria-process/static/js/main.fd5f2995.chunk.js.map",
     "runtime-main.js": "/austria-process/static/js/runtime-main.b170bfb0.js",
     "runtime-main.js.map": "/austria-process/static/js/runtime-main.b170bfb0.js.map",
     "static/js/2.ca4d21f4.chunk.js": "/austria-process/static/js/2.ca4d21f4.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b170bfb0.js",
     "static/js/2.ca4d21f4.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.7a1a40e7.chunk.js"
+    "static/js/main.fd5f2995.chunk.js"
   ]
 }
