@@ -10,11 +10,11 @@ const AdmissionResidence = () => {
         <Grid container spacing={10}>
             <Grid item xs={12} sm={12} md={6} lg={6}>
             <ResidencePermit />
+            <Divider />
+                <BookFlight />
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
                 <VisaD />
-                <Divider />
-                <BookFlight />
             </Grid>
         </Grid>
     );

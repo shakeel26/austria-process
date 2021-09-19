@@ -59,7 +59,7 @@ const About = () => {
           </Grid>
         )}
 
-        <Grid item xs={12} md={8} lg={8}>
+        <Grid item s={12} xs={12} md={8} lg={8}>
           <img
             align= 'right'
             className={classes.cover}

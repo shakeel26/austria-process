@@ -9,7 +9,9 @@ const BookFlight = () => {
                 <br />
                 or find something suitable at <a href='https://www.skyscanner.net'>skyscanner</a>
                 <br />
-                Thank me later.
+                <br />
+                <br />
+                Thank me later :)
             </p>
         </>
     );

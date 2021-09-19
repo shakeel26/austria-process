@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Modal from '@material-ui/core/Modal';
 import AppointmentFormLink from '../Appointment';
 import { verification } from "../../data";
-import Pageview from '@material-ui/icons/Pageview';
 
 
 const useStyles = makeStyles({
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
         textAlign: 'center'
     },
     closeModal: {
-       }
+    }
 });
 
 
@@ -33,27 +34,16 @@ const Verification = () => {
 
     const classes = useStyles();
     const [modelBox, setmodelBox] = useState('');
-    const [open, setOpen] = useState(false);
-    const handleOpen = spouse => {
-        setOpen(true);
-        makeBoxFunction(spouse);
-    };
 
     const makeBoxFunction = spouse => {
         setmodelBox(
-            <Box className={classes.modalBox}>
-                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Applicant docs</Typography>
-                <Divider />
-                <Typography id="parent-modal-description">
+            <>
+                <Typography>
                     {spouse === 'spouse' ? Object.entries(verification.docs.spouse).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>) : Object.entries(verification.docs.spouseWhoStudy).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
                 </Typography>
-                <Button justify="space-between" className={classes.closeModal} variant="contained" onClick={handleClose}>Close</Button>
-            </Box>
+            </>
         )
     }
-    const handleClose = () => {
-        setOpen(false);
-    };
 
     return (
         <>
@@ -67,40 +57,45 @@ const Verification = () => {
 
             <Typography>{verification.desc} </Typography>
 
-            <h5>Note</h5>
-            <Typography>{verification.note}</Typography>
-
             <ul>
                 <Typography><strong>1. For Students</strong> </Typography>
                 {Object.entries(verification.docs.student).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
             </ul>
             <Divider />
 
-            <ul>
-                <Typography>  <strong>2. For Spouse Visa</strong> <Button variant="contained" onClick={() => handleOpen('spouse')}>View List <Pageview /></Button></Typography>
-                <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="parent-modal-title"
-                    aria-describedby="parent-modal-description"
+
+            <Accordion>
+                <AccordionSummary
+                    onClick={() => makeBoxFunction('spouse')}
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
                 >
-                    {modelBox}
-                </Modal>
-            </ul>
+                    <Typography ><strong>2. For Spouse Visa</strong></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        {modelBox}
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
 
-            <ul>
-                <Typography>  <strong>3. Spouse Who will study or need recognition of docs</strong> <Button variant="contained" onClick={() => handleOpen('spouseWhoStudy')}>View List <Pageview /></Button></Typography>
-                <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="parent-modal-title"
-                    aria-describedby="parent-modal-description"
+
+            <Accordion>
+                <AccordionSummary
+                    onClick={() => makeBoxFunction('spouseWhoStudy')}
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
                 >
-
-                    {modelBox}
-                </Modal>
-
-            </ul>
+                    <Typography ><strong>3. Spouse Who will study or need recognition of docs</strong></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        {modelBox}
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
 
             <Divider />
             <h4>Positive Result</h4>

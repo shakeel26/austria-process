@@ -9,7 +9,7 @@ import BeforeStart from './components/BeforeStart';
 
 
 
-function App() {
+const App = () => {
   return (
 <>
 <Navbar />

@@ -54,7 +54,6 @@ export const verification = {
     'resultPositive': 'The embassy will inform you by e-mail about the positive result. Now you move to step 2 for lgalization of the verified documents.'
 }
 
-
 export const legalization = {
     'fee': '80 Euro/document',
     'desc': 'Legalization is the confirmation of a true copy of an original document presented to and done by the consular section. An authentication is only possible if the original document has been issued by an Austrian authority. Foreign documents can, therefore, not be authenticated.',
