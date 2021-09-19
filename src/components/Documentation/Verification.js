@@ -42,7 +42,7 @@ const Verification = () => {
     const makeBoxFunction = spouse => {
         setmodelBox(
             <Box className={classes.modalBox}>
-                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Begum k kagaz</Typography>
+                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Applicant docs</Typography>
                 <Divider />
                 <Typography id="parent-modal-description">
                     {spouse === 'spouse' ? Object.entries(verification.docs.spouse).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>) : Object.entries(verification.docs.spouseWhoStudy).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
@@ -60,6 +60,8 @@ const Verification = () => {
             <h3> Step 1 - Verification </h3>
 
             <h4>Fee: {verification.fee} </h4>
+            <h6>Timeline: 2 - 4 months - Wait for embassy email after submission of docs</h6>
+
             <AppointmentFormLink />
             <Divider />
 

@@ -21,6 +21,7 @@ const Legalization = () => {
         <>
             <h3> Step 2 - Legalization </h3>
             <h4>Fee: {legalization.fee} </h4>
+            <h6>Timeline: 1 day - Submit docs in morning and get back at 2:30pm</h6>
             <AppointmentFormLink />
             <Divider />
             <Typography>{legalization.desc} </Typography>

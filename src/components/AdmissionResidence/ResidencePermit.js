@@ -39,7 +39,7 @@ const ResidencePermit = () => {
     const makeBoxFunction = spouse => {
         setmodelBox(
             <Box className={classes.modalBox}>
-                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Begum k kagaz</Typography>
+                <Typography variant="h5" className={classes.modalHead} id="parent-modal-title">Applicant docs</Typography>
                 <Divider />
                 <Typography id="parent-modal-description">
                     {Object.entries(residence.docs.spouse).map(([key, value]) => <li key={key} className={classes.list}> {value}</li>)}
