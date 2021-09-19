@@ -7,18 +7,25 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ButtonMailto from './ButtonMailto';
 
-const useStyles = makeStyles(theme => ({
-  // root: {
-  //   marginTop: '5%',
-  // },
+const useStyles = makeStyles((theme) => ({
   cover: {
-    alignItems: 'right',
-    width: '65%'
+    [theme.breakpoints.up('lg')]: {
+      width: '70%'
+    },
+    [theme.breakpoints.up('xs')]: {
+      width: '90%'
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '70%'
+    },
   },
   content: {
     flex: '1 0 auto',
     marginTop: '5%',
     marginLeft: '8%',
+    [theme.breakpoints.down('md')]: {
+      width: '100%'
+    },
   },
   buttons: {
     marginLeft: '10%'
@@ -44,24 +51,22 @@ const About = () => {
               </Typography>
               <Typography>
                 {about.desc}
-
               </Typography>
             </CardContent>
 
             <div className={classes.buttons}>
-              {/* <Link href="#contact" color="inherit"> */}
-                <Button variant="contained"> 
+              <Button variant="contained">
                 <ButtonMailto label="Contact" mailto="mailto:xhakil26@gmail.com" />
-                </Button>
-              {/* </Link> */}
+              </Button>
             </div>
 
           </Grid>
         )}
 
+
         <Grid item s={12} xs={12} md={8} lg={8}>
           <img
-            align= 'right'
+            align='right'
             className={classes.cover}
             src="/austria-process/austria-cover.png"
             alt="Austria Mao"

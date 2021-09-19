@@ -11,8 +11,11 @@ const Documentation = () => {
         <Grid container spacing={10}>
             <Grid item xs={12} sm={12} md={6} lg={6}>
                 <Verification />
+                <Divider />
+
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
+                
                 <Legalization />
                 <Divider />
                 <Admission />
