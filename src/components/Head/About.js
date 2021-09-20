@@ -22,8 +22,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flex: '1 0 auto',
     marginTop: '5%',
-    marginLeft: '8%',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.up('md')]: {
       width: '100%'
     },
   },
