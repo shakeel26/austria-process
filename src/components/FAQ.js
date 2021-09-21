@@ -1,57 +1,46 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
-import AppointmentFormLink from '../Appointment';
-import { verification } from "../../data";
-
+import { faq } from "../data";
 
 const useStyles = makeStyles({
-    modalBox: {
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        backgroundColor: "white"
-    },
-    list: {
-        marginLeft: '7%'
-    },
-    modalHead: {
-        textAlign: 'center'
-    },
-    closeModal: {
-    }
+   
 });
 
-
-const Verification = () => {
-
+const FAQ = () => {
     const classes = useStyles();
-
     return (
         <>
             <h3> Frequently Asked Questions </h3>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography ><strong>Question will come</strong></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Answer will come.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
+            {/* <Grid container spacing={10}>
+                <Grid item xs={12} md={6} lg={6}> */}
+                    {faq.map((question, index) => {
+                        return <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                                key={index}
+                            >
+                                <Typography ><strong>{index + 1}. {question.question}</strong></Typography>
+                            </AccordionSummary>
+                            <Divider />
+                            <AccordionDetails>
+                                <Typography>
+                                    {question.answer}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    })}
+                {/* </Grid>
+            </Grid> */}
         </>
     );
 }
-export default Verification;
+export default FAQ;

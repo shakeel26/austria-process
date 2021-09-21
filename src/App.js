@@ -6,6 +6,7 @@ import Documentation from './components/Documentation/Documentation.js';
 import AdmissionResidence from './components/AdmissionResidence/AdmissionResidence';
 import Footer from './components/Footer';
 import BeforeStart from './components/BeforeStart';
+import FAQ from './components/FAQ';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 <Documentation />
 <Divider />
 <AdmissionResidence />
+<FAQ />
 <Footer />
 
 </>

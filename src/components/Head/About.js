@@ -58,7 +58,6 @@ const About = () => {
                 <ButtonMailto label="Contact" mailto="mailto:xhakil26@gmail.com" />
               </Button>
             </div>
-
           </Grid>
         )}
 

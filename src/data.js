@@ -7,6 +7,7 @@ export const beforeStart = [{
     'title': 'Before Start !',
     'desc': 'Please get your all documents attested from Ministry of foreign affairs(MOFA) before starting the embassy process. '
 }]
+
 export const verification = {
     'fee': '22800 PKR',
     'desc': 'Applications for the verification of Pakistani certificates and documents will only be accepted with a prior appointment. The embassy will notify the applicant by e-mail about the relevant appointment.',
@@ -139,6 +140,22 @@ export const visaD = {
 export const bonus = {
     'desc': 'For those who read everything, If you managed to score admission before everything else then you can get the legalization of docs and residence permit submission on the same day and this applies on spouse visa too.'
 }
+
+
+export const faq = [{
+    'question': 'What if I have foreign education ?',
+    'answer': "You don't need legalization of foreign docs. You have to only legalize your Pakistani docs. Maybe Birth and Police Certificate etc."
+},
+{
+    'question': 'I have O and A Levels, What should I do ?',
+    'answer': 'You should try getting admission directly and in parallel you can process for verification and legalization for your Pakistani docs.'
+},
+{
+    'question': 'I already got admission should I proceed Step wise ?',
+    'answer': 'Congratulations :) You can get your docs verified and then apply for Residence Permit and Legalization on the same day.'
+}
+]
+
 
 export const form = [{
     'link': 'https://www.bmeia.gv.at/fileadmin/user_upload/Vertretungen/Islamabad/Dokumente/Terminanfrageformular.docx'
