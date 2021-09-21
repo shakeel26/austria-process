@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import BeforeStart from './components/BeforeStart';
 
 
-
 const App = () => {
   return (
 <>
@@ -20,7 +19,6 @@ const App = () => {
 <Documentation />
 <Divider />
 <AdmissionResidence />
-<Divider />
 <Footer />
 
 </>

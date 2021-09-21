@@ -15,7 +15,6 @@ const AdmissionResidence = () => {
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
             <Divider />
-
                 <VisaD />
             </Grid>
         </Grid>

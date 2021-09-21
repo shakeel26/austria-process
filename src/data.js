@@ -1,6 +1,6 @@
 export const about = [{
     'title': 'Shakeel here!',
-    'desc':  'Purpose of the page , to make life easy and get rid of responding same questions over and over to propective students/applicants. I tried to make everything super easy, please dont write me now how to process. You can write me if you are stuck and need help.'
+    'desc': 'Purpose of the page , to make life easy and get rid of responding same questions over and over to propective students/applicants. I tried to make everything super easy, please dont write me now how to process. You can write me if you are stuck and need help.'
 }]
 
 export const beforeStart = [{
@@ -10,12 +10,12 @@ export const beforeStart = [{
 export const verification = {
     'fee': '22800 PKR',
     'desc': 'Applications for the verification of Pakistani certificates and documents will only be accepted with a prior appointment. The embassy will notify the applicant by e-mail about the relevant appointment.',
-    'docs' : {
-        'student' : {
+    'docs': {
+        'student': {
             '1': 'Passport',
             '2': 'CNIC',
             '3': 'Matric Certificate',
-            '4': 'Fsc Certificate / Intermediate' ,
+            '4': 'Fsc Certificate / Intermediate',
             '5': 'University Degree',
             '6': 'University Transcript',
             '7': 'Birth Certificate',
@@ -37,7 +37,7 @@ export const verification = {
             '1': 'Passport',
             '2': 'CNIC',
             '3': 'Matric Certificate (Only if spouse wants to study)',
-            '4': 'Fsc Certificate / Intermediate (Only if spouse wants to study)' ,
+            '4': 'Fsc Certificate / Intermediate (Only if spouse wants to study)',
             '5': 'University Degree (Only if spouse wants to study)',
             '6': 'University Transcript (Only if spouse wants to study)',
             '7': 'Birth Certificate',
@@ -58,8 +58,8 @@ export const legalization = {
     'fee': '80 Euro/document',
     'desc': 'Legalization is the confirmation of a true copy of an original document presented to and done by the consular section. An authentication is only possible if the original document has been issued by an Austrian authority. Foreign documents can, therefore, not be authenticated.',
     'easy': "If you didn't understand the statement above , its simply the attestation of your documents from embassy.",
-    'docs' : {
-        'student' : {
+    'docs': {
+        'student': {
             '1': 'University Degree /Intermediate Certificate for Bachelor candidates',
             '2': 'Birth Certificate',
             '3': "Police Clearance Certificate (a fresh one not the one you had at Step 1)",
@@ -79,11 +79,11 @@ export const legalization = {
 export const residence = {
     'fee': '120 Euro',
     'desc': 'The "Residence Permit – Student" is intended for nationals of third countries who have been admitted to study at a higher education institution in Austria. Apply for it if your intended stay is more than 6 months in Austria.',
-    'docs' : {
-        'student' : {
+    'docs': {
+        'student': {
             '1': 'Passport',
             '2': 'CNIC',
-            '3': 'Filled visa application' ,
+            '3': 'Filled visa application',
             '4': 'Passport-sized photograph according to the ICAO criteria (colour photograph, size 3.5 x 4.5 cm) not older than 6 months',
             '5': 'Admission Letter',
             '6': 'Accommodation in Austria for a minimum of 3 months',
@@ -101,7 +101,7 @@ export const residence = {
             '2': 'Students as of the age of 24: EUR 1,000.48/month',
             '3': 'Couples:  EUR 1,578.36/month for both',
             '4': 'For each child additionally: EUR 154.37/month'
-        },     
+        },
         'spouse': {
             '1': 'Passport',
             '2': 'CNIC',
@@ -126,14 +126,18 @@ export const visaD = {
     'fee': '100 Euro',
     'desc': 'A Visa D entitles you to enter and stay in Austria. It can be granted for a duration of 91 days up to 6 months. Holders of a Visa D also enjoy freedom of movement to other Schengen countries for up to 90 days provided that they fulfil the general entry conditions.',
     'easy': "If you didn't understand the statement above , its simply the visa on your paspsort and you are suppose to collect your residence card once you are in Austria.",
-    'docs' : {
+    'docs': {
         '1': 'Passport',
-        '2': 'CNIC ' ,
+        '2': 'CNIC ',
         '3': 'Passport-sized photograph according to the ICAO criteria (colour photograph, size 3.5 x 4.5 cm)',
         '4': 'Filled National Visa D Application(Embassy will send form once Step 5 is complete)',
         '5': 'Insurance',
         '6': 'Flight booking'
     }
+}
+
+export const bonus = {
+    'desc': 'For those who read everything, If you managed to score admission before everything else then you can get the legalization of docs and residence permit submission on the same day and this applies on spouse visa too.'
 }
 
 export const form = [{
