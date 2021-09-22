@@ -9,7 +9,7 @@ import BonusInformation from '../Bonus';
 
 const Documentation = () => {
     return (
-        <Grid container spacing={10}>
+        <Grid container spacing={0}>
             <Grid item xs={12} sm={12} md={6} lg={6}>
                 <Verification />
                 <Divider />

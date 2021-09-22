@@ -41,7 +41,7 @@ const About = () => {
 
   return (
     <section id="about">
-      <Grid container spacing={10} className={classes.root}>
+      <Grid container spacing={0} className={classes.root}>
         {about.map((about, index) =>
           <Grid item xs={12} md={4} lg={4} key={index}>
             <CardContent className={classes.content}>
