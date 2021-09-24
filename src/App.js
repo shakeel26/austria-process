@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import BeforeStart from './components/BeforeStart';
 import FAQ from './components/FAQ';
 
-
 const App = () => {
   return (
 <>
@@ -20,6 +19,7 @@ const App = () => {
 <Documentation />
 <Divider />
 <AdmissionResidence />
+<Divider />
 <FAQ />
 <Footer />
 

@@ -2,6 +2,10 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import AppointmentFormLink from '../Appointment';
 import { visaD } from "../../data";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
@@ -29,10 +33,22 @@ const VisaD = () => {
             <Typography>{visaD.desc} </Typography>
             <Typography className={classes.easyLegalization} >{visaD.easy}</Typography>
 
-            <h4> Required docs are: </h4>
-            <ol>
-                {Object.entries(visaD.docs).map(([key, value]) => <li key={key}> {value}</li>)}
-            </ol>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography ><strong>Required docs are:</strong></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        <ol>
+                            {Object.entries(visaD.docs).map(([key, value]) => <li key={key}> {value}</li>)}
+                        </ol>
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
         </>
     );
 }

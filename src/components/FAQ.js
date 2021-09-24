@@ -18,8 +18,8 @@ const FAQ = () => {
     return (
         <>
             <h3> Frequently Asked Questions </h3>
-            {/* <Grid container spacing={10}>
-                <Grid item xs={12} md={6} lg={6}> */}
+             <Grid container spacing={0}>
+                <Grid item xs={12} md={12} lg={12}>
                     {faq.map((question, index) => {
                         return <Accordion>
                             <AccordionSummary
@@ -38,8 +38,8 @@ const FAQ = () => {
                             </AccordionDetails>
                         </Accordion>
                     })}
-                {/* </Grid>
-            </Grid> */}
+                </Grid>
+            </Grid> 
         </>
     );
 }
