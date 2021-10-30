@@ -12,10 +12,10 @@ const App = () => {
       <Navbar />
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path="/programs" component={Programs} />
+          <Route exact path='/austria-process' component={Home} />
+          {/* <Route exact path="/programs" component={Programs} />
           <Route exact path="/degree/:degreeName" component={Programs} />
-          <Route exact from="*" component={Error404} />
+          <Route exact from="*" component={Error404} /> */}
         </Switch>
       </BrowserRouter>
       <Footer />
