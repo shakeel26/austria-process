@@ -17,7 +17,7 @@ const Details = (props) => {
     return (
         <div className="container">
             <Modal size="lg" show={!!props.singleCourse} onHide={handleClose}>
-                <Link to={"/"}>
+                <Link to={"/programs"}>
                     <Modal.Header closeButton onClick={handleClose}>
                         {props.singleCourse.crawledCourses.degreeName !== '' ?
                             <Modal.Title>{props.singleCourse.crawledCourses.degreeName}</Modal.Title> : null}
