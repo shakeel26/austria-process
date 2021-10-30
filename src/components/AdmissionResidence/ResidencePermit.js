@@ -46,7 +46,9 @@ const ResidencePermit = () => {
         )
     }
 
-    const visaFormLink = <a href={process.env.PUBLIC_URL + "/Student_visa_ApplicationForm.pdf"} target="_blank" rel="noreferrer">Download Visa Application</a>
+    const visaFormLink = <a href={process.env.PUBLIC_URL + "/Student_visa_ApplicationForm.pdf"} target="_blank" rel="noreferrer">Visa Application</a>
+    const visaFormTranslation = <a href="https://www.bmi.gv.at/302/Formulare/Erklaerungen_201908/06_Aufenthaltsbewilligung_Student-Erklaerung_EN_20190823.pdf" target="_blank" rel="noreferrer"> Explanation in English  </a>
+
     return (
         <>
             <h3> Step 5 - Residence Permit </h3>
@@ -67,7 +69,7 @@ const ResidencePermit = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                    {Object.entries(residence.docs.student).map(([key, value]) => <li className={classes.list} key={key}> {key === '3' ? <>{value} {visaFormLink}</> : value}</li>)}
+                    {Object.entries(residence.docs.student).map(([key, value]) => <li className={classes.list} key={key}> {key === '3' ? <>{value} {visaFormLink} {visaFormTranslation}</> : value}</li>)}
                 <li className={classes.list}> Bank Statement having 1 year of expense
                     <ul>
                         {Object.entries(residence.docs.studentBankStament).map(([key, value]) => <li key={key}> {value}</li>)}

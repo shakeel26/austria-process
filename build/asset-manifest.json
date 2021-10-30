@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/austria-process/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/austria-process/static/js/main.04864665.chunk.js",
-    "main.js.map": "/austria-process/static/js/main.04864665.chunk.js.map",
+    "main.js": "/austria-process/static/js/main.559dbbcb.chunk.js",
+    "main.js.map": "/austria-process/static/js/main.559dbbcb.chunk.js.map",
     "runtime-main.js": "/austria-process/static/js/runtime-main.a2ed7587.js",
     "runtime-main.js.map": "/austria-process/static/js/runtime-main.a2ed7587.js.map",
-    "static/js/2.d9c50355.chunk.js": "/austria-process/static/js/2.d9c50355.chunk.js",
-    "static/js/2.d9c50355.chunk.js.map": "/austria-process/static/js/2.d9c50355.chunk.js.map",
+    "static/js/2.6e2e832f.chunk.js": "/austria-process/static/js/2.6e2e832f.chunk.js",
+    "static/js/2.6e2e832f.chunk.js.map": "/austria-process/static/js/2.6e2e832f.chunk.js.map",
     "static/js/3.d4ae7e66.chunk.js": "/austria-process/static/js/3.d4ae7e66.chunk.js",
     "static/js/3.d4ae7e66.chunk.js.map": "/austria-process/static/js/3.d4ae7e66.chunk.js.map",
     "index.html": "/austria-process/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/austria-process/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.d9c50355.chunk.js.LICENSE.txt": "/austria-process/static/js/2.d9c50355.chunk.js.LICENSE.txt"
+    "static/js/2.6e2e832f.chunk.js.LICENSE.txt": "/austria-process/static/js/2.6e2e832f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a2ed7587.js",
-    "static/js/2.d9c50355.chunk.js",
+    "static/js/2.6e2e832f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.04864665.chunk.js"
+    "static/js/main.559dbbcb.chunk.js"
   ]
 }

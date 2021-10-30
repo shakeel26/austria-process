@@ -84,7 +84,7 @@ export const residence = {
         'student': {
             '1': 'Passport',
             '2': 'CNIC',
-            '3': 'Filled visa application',
+            '3': 'Filled visa application ',
             '4': 'Passport-sized photograph according to the ICAO criteria (colour photograph, size 3.5 x 4.5 cm) not older than 6 months',
             '5': 'Admission Letter',
             '6': 'Accommodation in Austria for a minimum of 3 months',
@@ -124,7 +124,7 @@ export const residence = {
 }
 
 export const visaD = {
-    'fee': '100 Euro',
+    'fee': '150 Euro',
     'desc': 'A Visa D entitles you to enter and stay in Austria. It can be granted for a duration of 91 days up to 6 months. Holders of a Visa D also enjoy freedom of movement to other Schengen countries for up to 90 days provided that they fulfil the general entry conditions.',
     'easy': "If you didn't understand the statement above , its simply the visa on your paspsort and you are suppose to collect your residence card once you are in Austria.",
     'docs': {
@@ -155,7 +155,6 @@ export const faq = [{
     'answer': 'Congratulations :) You can get your docs verified and then apply for Residence Permit and Legalization on the same day.'
 }
 ]
-
 
 export const form = [{
     'link': 'https://www.bmeia.gv.at/fileadmin/user_upload/Vertretungen/Islamabad/Dokumente/Terminanfrageformular.docx'
