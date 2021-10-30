@@ -23,14 +23,19 @@ const Navbar = () => {
       <Toolbar className={classes.menuItems}>
 
       <MenuItem>
-          <Link color="inherit" href="">Home</Link>
+          <Link color="inherit" href="/">Home</Link>
         </MenuItem>
         <MenuItem>
-          <Link color="inherit" href="#job" >Job Scene</Link>
+          <Link color="inherit" href="/job" >Job Scene</Link>
         </MenuItem>
         <MenuItem>
-          <Link color="inherit" href="#contact" >Contact</Link>
+          <Link color="inherit" href="/programs" >Study Programs</Link>
         </MenuItem>
+
+        <MenuItem>
+          <Link color="inherit" href="/contact" >Contact</Link>
+        </MenuItem>
+
       </Toolbar>
     </AppBar>
   )

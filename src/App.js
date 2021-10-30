@@ -1,29 +1,25 @@
 import React from 'react';
-import Divider from '@material-ui/core/Divider';
-import About from './components/Head/About';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from './screens/Home';
 import Navbar from './components/Head/Navbar';
-import Documentation from './components/Documentation/Documentation.js';
-import AdmissionResidence from './components/AdmissionResidence/AdmissionResidence';
 import Footer from './components/Footer';
-import BeforeStart from './components/BeforeStart';
-import FAQ from './components/FAQ';
+import Programs from './screens/Programs';
+import Error404 from './screens/Error404';
 
 const App = () => {
   return (
-<>
-<Navbar />
-<About />
-<Divider />
-<BeforeStart/>
-<Divider/>
-<Documentation />
-<Divider />
-<AdmissionResidence />
-<Divider />
-<FAQ />
-<Footer />
-
-</>
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path="/programs" component={Programs} />
+          <Route exact path="/degree/:degreeName" component={Programs} />
+          <Route exact from="*" component={Error404} />
+        </Switch>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 
