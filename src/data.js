@@ -1,6 +1,6 @@
 export const about = [{
     'title': 'Shakeel here!',
-    'desc': 'Purpose of the page , to make life easy and get rid of responding same questions over and over to propective students/applicants. I tried to make everything super easy, please dont write me now how to process. You can write me if you are stuck and need help.'
+    'desc': 'Purpose of the page , to make life easy and get rid of responding same questions over and over to prospective students/applicants. I tried to make everything super easy, please dont write me now how to process. You can write me if you are stuck and need help. Please also note that THIS IS JUST MY PERSONAL PAGE AND INFORMATION GIVEN IS PERSONAL UNDERSTANDING.'
 }]
 
 export const beforeStart = [{
