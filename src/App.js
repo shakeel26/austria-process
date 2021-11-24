@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './screens/Home';
 import Navbar from './components/Head/Navbar';
 import Footer from './components/Footer';
-import Programs from './screens/Programs';
 import Error404 from './screens/Error404';
 
 const App = () => {
