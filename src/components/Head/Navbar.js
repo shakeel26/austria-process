@@ -25,7 +25,7 @@ const Navbar = () => {
       <MenuItem>
           <Link color="inherit" href="/">Home</Link>
         </MenuItem>
-        <MenuItem>
+        {/* <MenuItem>
           <Link color="inherit" href="/job" >Job Scene</Link>
         </MenuItem>
         <MenuItem>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
         <MenuItem>
           <Link color="inherit" href="/contact" >Contact</Link>
-        </MenuItem>
+        </MenuItem> */}
 
       </Toolbar>
     </AppBar>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Error404 = () => {
-    return <div> You fucked something please go to Homepage now. Page not found !</div>
+    return <div> No time to test and deploy, Please have fun with Homepage for now !</div>
 }
 
 export default Error404;
