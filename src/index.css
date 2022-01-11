@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sidenav {
+  margin-top: 5%;
+  height: 100vh;
+  width: 200px;
+  float: left;
+  /*position: absolute;*/
+}
+.degreeName {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.col-sm-9 {
+  text-align: left;
+}
+.modal-dialog {
+  max-width: 60% !important;
+}
+
+/* #root {
+  height: 100vh;
+  width: calc(100% - 400px);
+  float: left;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+} */
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 70% !important;
+    margin: 1.75rem auto;
+  }
+}
+
+
+/* # Pagination CSS */
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #007bff ;
+  border-color: #007bff ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #007bff ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #007bff ;
+  border-color: #007bff;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #007bff
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
