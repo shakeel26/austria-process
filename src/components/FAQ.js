@@ -16,7 +16,7 @@ const FAQ = () => {
              <Grid container spacing={0}>
                 <Grid item xs={12} md={12} lg={12}>
                     {faq.map((question, index) => {
-                        return <Accordion>
+                        return <Accordion key= {index}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"

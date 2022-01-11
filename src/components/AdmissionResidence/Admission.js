@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 const Admission = () => {
     return (
         <>
-            <h3> Step 2 - Admission </h3>
+            <h3> Step 3 - Admission </h3>
             <Typography> There is <strong>NO</strong> Admission application fee in public universities</Typography>
             <Typography>Per Semester fee for Master program is <strong>746 </strong>Euros/semester</Typography>
             <Typography>

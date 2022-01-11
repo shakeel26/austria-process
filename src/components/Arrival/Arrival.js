@@ -1,26 +1,23 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Divider from '@material-ui/core/Divider';
-import Accommodation from './Accommodation';
-import ResidencePermit from './ResidencePermit';
-import BonusInformation from '../Bonus';
+import VisaD from './VisaD';
+import BookFlight from './BookFlight';
+import ThankMe from './ThankMe';
 
-
-const AdmissionResidence = () => {
+const Documentation = () => {
     return (
         <Grid container spacing={0}>
             <Grid item xs={12} sm={12} md={6} lg={6}>
-                <Accommodation />
-                <Divider />
-                <BonusInformation />
-
+                <VisaD />
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
-                <ResidencePermit />
+                <BookFlight />
                 <Divider />
+                <ThankMe />
             </Grid>
         </Grid>
     );
 }
 
-export default AdmissionResidence;
+export default Documentation;
