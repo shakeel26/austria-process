@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/austria-process/static/css/main.e37ece42.css",
+    "main.js": "/austria-process/static/js/main.0d34a0ac.js",
+    "static/js/787.ddb06b74.chunk.js": "/austria-process/static/js/787.ddb06b74.chunk.js",
+    "index.html": "/austria-process/index.html",
+    "main.e37ece42.css.map": "/austria-process/static/css/main.e37ece42.css.map",
+    "main.0d34a0ac.js.map": "/austria-process/static/js/main.0d34a0ac.js.map",
+    "787.ddb06b74.chunk.js.map": "/austria-process/static/js/787.ddb06b74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e37ece42.css",
+    "static/js/main.0d34a0ac.js"
+  ]
+}
