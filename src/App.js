@@ -6,6 +6,9 @@ import Footer from './components/Footer';
 import Error404 from './screens/Error404';
 
 const App = () => {
+  var emailInput = prompt("What Is Your Age?");
+
+if(emailInput.toLocaleLowerCase()==='mr.abbassherazi@gmail.com') {
   return (
     <>
       <Navbar />
@@ -21,6 +24,20 @@ const App = () => {
       <Footer />
     </>
   );
+} else {
+
+  return (
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Switch>
+          <Route exact from="*" component={Error404} />
+        </Switch>
+      </BrowserRouter>
+      <Footer />
+    </>
+  );
+}
 }
 
 export default App;
